@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Robot Web</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="data:,">
+<style>
+body, a {
+  font-family: Verdana, Arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+button {
+  font-size: 300%;
+  margin: 0px 10px;
+  height: 60px;
+  width: 60px;
+}
+</style>
+</head>
+<body>
+<h1><a href='/'>Robot Web</a></h1>
+{{ stamp }}<br><br>
+<form method="post">
+  <button formaction="forward">&blacktriangle;</button>
+  <button formaction="backward">&blacktriangledown;</button>
+  <br><br>
+  <button formaction="left">&blacktriangleleft;</button>
+  <button formaction="right">&blacktriangleright;</button>
+  <br><br>
+  <button formaction="spin_left">&circlearrowleft;</button>
+  <button formaction="spin_right">&circlearrowright;</button>
+  <br><br>
+  <button formaction="noop">X</button>
+</form>
+</body>
+</html>
