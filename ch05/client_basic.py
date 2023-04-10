@@ -8,8 +8,8 @@ def call_api(url, data):
     data = json.dumps(data).encode()
     urlopen(url, data).read()
 
-def call_robot(name, **args):
-    call_api(ROBO_URL + name, args)
+def call_robot(func, **args):
+    call_api(ROBO_URL + func, args)
 
 call_robot('forward')
 call_robot('backward')

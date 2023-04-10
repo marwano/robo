@@ -10,7 +10,7 @@ def call_api(conn, url, data):
     with conn.getresponse() as resp:
         resp.read()
 
-def call_robot(conn, name, **args):
+def call_robot(conn, func, **args):
     return call_api(conn, '/' + name, args)
 
 def get_noop_timing(conn):

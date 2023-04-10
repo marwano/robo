@@ -8,7 +8,7 @@ def call_api(conn, url, data):
     with conn.getresponse() as resp:
         resp.read()
 
-def call_robot(conn, name, **args):
+def call_robot(conn, func, **args):
     return call_api(conn, '/' + name, args)
 
 conn = HTTPConnection('robopi:8888')
