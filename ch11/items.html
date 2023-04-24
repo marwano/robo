@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Snack Pusher</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="{{ static_url('style.css') }}">
+</head>
+<body>
+<form method="post">
+  {% for item in items %}
+    <button formaction="{{ item['code'] }}">
+      {{ item['icon'] }}<br>
+      {{ item['code'] }}
+    </button>
+  {% end %}
+</form>
+</body>
+</html>
