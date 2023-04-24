@@ -11,7 +11,7 @@ def call_api(conn, url, data):
         resp.read()
 
 def call_robot(conn, func, **args):
-    return call_api(conn, '/' + name, args)
+    return call_api(conn, '/' + func, args)
 
 def get_noop_timing(conn):
     start = time.perf_counter()
